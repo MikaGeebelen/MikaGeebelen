@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Tug of Tar</h1>
+							<h3>The project</h3>
+							<p>
+								We are making an augmented reality game made for 2player versus.<br />
+								The game gives each player a base that they have to defend. These bases are connected with a lane where you can send units over to attack the other person.
+								You also have acces to a variety of turrets to boost your economy or bombard incoming units with explosives and missiles. The game ends when one player manages to destroy their opponents base.<br /><br />
+								We are creating this game for mobile in the unity game engine.
+							</p>
+							<h3>My contribution so far</h3>
+							<p>
+								In the prototyping phase I was assigned to research microsoft azure spatial anchors and unit movements on lanes.<br /><br>
+								Microsoft azure spatial anchors is the core requirement for the project assigned by our client. We use these anchors to store spatial data in the cloud.
+								Then we let one user create this spatial anchor and the other user connects via network to the other user to retrieve the anchor.
+								Now that both users have the same spatial anchor we can create a scene around this anchor and both users will see the same scene.<br><br>
+								The lane system unit in our game need to travel over a lane from your base to the enemy base.
+								This lane is split into 3 "sublanes" if units enter combat they stop moving then the unit walking behind the stopped unit can go stand on the left or right side of this unit.
+							</p>
+
+							<img src="images/OpenLane2.gif" data-position="center center">
+
+							<h3>The team</h3>
+							<p>
+								our team consist of 3 programmers and 2 artists<br>
+								programmers:<br>
+								- Mika Geebelen<br>
+								- Rik Fabri<br>
+								- Maximiliaan Hendrikx<br>
+								artists:<br>
+								- Inias Carpentier<br>
+								- Victor Borgions<br>
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>  
