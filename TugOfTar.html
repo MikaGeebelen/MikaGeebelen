@@ -30,24 +30,62 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Tug of Tar</h1>
-							<h3>The project</h3>
+							<h2>The Project</h2>
 							<p>
-								We are making an augmented reality game made for 2player versus.<br />
+								I got assigned to a team of fellow students to create a client project.
+								We where tasked to create an augmented reality game with two player versus.<br />
 								The game gives each player a base that they have to defend. These bases are connected with a lane where you can send units over to attack the other person.
 								You also have acces to a variety of turrets to boost your economy or bombard incoming units with explosives and missiles. The game ends when one player manages to destroy their opponents base.<br /><br />
-								We are creating this game for mobile in the unity game engine.
-							</p>
-							<h3>My contribution so far</h3>
+								My team and I created this game for mobile in the unity game engine. 
+							<p/>
+							<h2>Trailer</h2>
+							<p><p/>
+							<video src="Resources/Vids/Trailer.mp4" width= "500" data-position="center center" controls>
+						
+							<h2>Gameplay</h2>
+							<p><p/>
+							<video src="Resources/Vids/DemoVideo.mp4" width= "500" data-position="center center" controls>
+
+							<h2>My Contribution</h2>
+							<p><p/>
+							<h3>Prototyping Phase</h3>
 							<p>
-								In the prototyping phase I was assigned to research microsoft azure spatial anchors and unit movements on lanes.<br /><br>
+								In the prototyping phase, I was assigned to research Microsoft azure spatial anchors and unit movements on lanes.<br /><br>
 								Microsoft azure spatial anchors is the core requirement for the project assigned by our client. Anchors are used to store spatial data in the cloud.
 								One user creates a spatial anchor and the other user connects via network to retrieve the anchor.
 								When both users have the same spatial anchor, a scene is created around it so both users see the same scene.<br><br>
 								The lane system allows units in our game to travel from their base to the enemy base.
 								Lanes are split into 3 "sublanes". When units enter combat they stop moving, the unit walking behind the stopped unit can go stand on the left or right side of this unit.
 							</p>
-
-							<img src="images/OpenLane2.gif" data-position="center center">
+							<h3>Production Phase</h3>
+							<p>
+								When the production phase started I set the Microsoft azure spatial anchors up first.
+								When this worked properly we could then really start working on the gameplay part of the game.
+								I set up the initial lane system however due to some unforeseen issues with the system it had to be redesigned. 
+								It went from a system where every unit raycasts to find their best location to a set of list that tracked which spots where taken and which where free.
+								Then my main task became creating a MRTK floating menu system for the game.
+								These menus allowed the player to spawn units and select their turrets.
+								And my last major task was to create all the base turrets.
+							</p>
+							<h3>Polish Phase</h3>
+							<p>
+								The main thing I cleaned up was the setup of the game so you couldn’t get stuck in the initial menu. 
+								The menu itself isn't too complex but the buttons should only be available when their corresponding part of the startup procedure is done.
+							</p>
+							<h2>Team members</h2>
+							<p>
+							Artists
+							Inias Carpentier  https://www.artstation.com/inias
+							Victor Borgions https://www.artstation.com/victor_borgions
+							<br /><br>
+							Programmers
+							Mika Geebelen -Me-
+							Maximiliaan Hendrikx https://maximiliaanhendrikx.myportfolio.com/
+							Rik Fabri
+							<br /><br>
+							Composer
+							Maximiliaan Hendrikx https://maximiliaanhendrikx.myportfolio.com/
+							<br /><br>
 						</div>
 					</section>
 
