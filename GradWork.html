@@ -30,10 +30,27 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Graduation work</h1>
-							<h2>Outline</h2>
-							<p>Generative grammars can recursively transform something into something using a user defined set of rules, Originally this was used to create phrases, but this can be applied to level design. This way a level can be generated from a graph that represents a network of abstract level sections/player actions (e.g collecting an item, solving a puzzle, defeating a boss) and the level layout is ultimately defined by the sequence of gameplay elements that was generated.</p>
-							<h2>literature study</h2>
-							<p>The first step for this project is to create a literature study. I started by going as broad as possible with the topic finding uses for graph grammers in a pletera areas including: robot generation, architecture, 2d dungeon generation. This lead me to a lot of research papers which I am currently studying.  </p>
+							<h2>Task</h2>
+							<p>The main goal of my graduation work was to choose a topic I am interested in, research this topic, choose something to create in line with the topic, and write down all my findings in a research paper.</p>
+							<h2>Topic and initial research</h2>
+							<p>The topic I chose was: Procedural level generation using graph grammar. The first thing I did was look up and read papers about graph grammar. I wanted to learn what graph grammars are, how to use them, and what they have been used. After reading a number of papers the most interesting one was about generating robots optimized for moving over different terrain types. This paper gave me the idea to generate game enemies more specifically boss enemies.  </p>
+							<h2>Results</h2>
+							<h3>Graph Grammar</h3>
+							<p>I used graph grammar to generate a graph that represents the abilities of the boss and the parts the boss is built out off. I created a way to visually represent this graph and the generation process. All the graph grammar rules are stored in a JSON file and can be created using an editor. Once a boss graph is generated it can be saved and loaded from and to a JSON file.</p>
+							<img src="Resources/Gifs/Generation.gif" width="90%">
+							<h3>Boss Battle</h3>
+							<p>After creating a graph that represents the boss I had to convert it to an actual creature with a body and a behaviour to be able to target and kill a player but also be able to take damage and go into different phases. The body is represented with circular sprites a boss can consist of main and secondary parts. The main part of each boss has abilities that it throws at the player and controls the main movement for it and any connected secondary parts when defeated the secondary parts that are still alive continue fighting but without the main core will have none to very limited movement. The secondary parts have abilities to attack the players and can have movement but this will be limited by the core piece that they are attached to. Each part also has phases with multiple possible conditions when going to a new phase a part unlocks new abilities. After a boss gets generated from the graph it can be edited and saved to a JSON file. You can also use saved graphs to generate a boss this randomizes its phase conditions, abilities, movement systems, and health. A player character is available to test and fight these generated bosses.</p>
+							<img src="Resources/Gifs/shoot1.gif"  width="30%">
+							<img src="Resources/Gifs/shoot2.gif"  width="30%">
+							<img src="Resources/Gifs/Player.gif"  width="30%">
+							<video width="90%" controls>
+								<source src="Resources/Videos/Media1.mp4" type="video/mp4">
+								This video format is not supported on your browser.
+							</video>
+							<h3>Conclusion</h3>
+							<p>Writing my first ever research paper was a very fun experience that thought me a lot like: what steps to take to start learning about a new topic, the value of reading other people’s work, being able to use it to create my own unique project, and learning how to write a paper myself. The topic I learned about for this paper was also very interesting as it aligned with my interests. I like learning about procedural generation and AI-related topics this project had a bit of both.</p>
+							<a href="Resources/Files/BossAIPaper.pdf" download="BossAIGenerator" class="button">Download the full paper</a>
+							<a href="https://github.com/MikaGeebelen/BossAI" target="_blank" class="button">Github</a>
 						</div>
 					</section>
 
